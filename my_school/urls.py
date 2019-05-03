@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from my_schools import views
+from django.conf.urls import url
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^api/catalogs/$', views.catalogs_list),
+    url(r'^api/catalogs/(?P<pk>[0-9]+)$', views.catalogs_detail),
 
 ]
