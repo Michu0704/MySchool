@@ -10,8 +10,4 @@ export default class MySchoolService{
         const url = `${API_URL}/api/catalogs/`;
         return axios.get(url).then(response => response.data);
     }
-    getCatalogsByURL(link){
-        const url = `${API_URL}${link}`;
-        return axios.get(url).then(response => response.data);
-    }
 }

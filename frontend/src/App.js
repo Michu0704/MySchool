@@ -14,7 +14,7 @@ const  BaseLayout  = () => (
         </button>
         <div  className="collapse navbar-collapse"  id="navbarNavAltMarkup">
           <div  className="navbar-nav">
-            <a  className="nav-item nav-link"  href="/">CUSTOMERS</a>
+            <a  className="nav-item nav-link"  href="/">CATALOGS</a>
           </div>
         </div>
       </nav>

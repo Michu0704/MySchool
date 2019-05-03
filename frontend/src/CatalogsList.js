@@ -10,22 +10,13 @@ class  CatalogsList  extends  Component {
         super(props);
         this.state = {
             catalogs: [],
-            nextPageURL: ''
         };
-        this.nextPage = this.nextPage.bind(this);
     }
 
     componentDidMount() {
         var self = this;
         myschoolService.getCatalogs().then(function (result) {
-            self.setState({catalogs: result.data, nextPageURL: result.nextlink})
-        });
-    }
-
-    nextPage() {
-        var self = this;
-        myschoolService.getCatalogssByURL(this.state.nextPageURL).then((result) => {
-            self.setState({catalogs: result.data, nextPageURL: result.nextlink})
+            self.setState({catalogs: result.data})
         });
     }
 
@@ -54,7 +45,6 @@ class  CatalogsList  extends  Component {
                         </tr>)}
                     </tbody>
                 </table>
-                <button className="btn btn-primary" onClick={this.nextPage}>Next</button>
             </div>
         );
     }
