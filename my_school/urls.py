@@ -22,4 +22,5 @@ from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^api/catalogs/$', views.catalogs_list),
+    url(r'^api/catalogs/(?P<pk>[0-9]+)$', views.catalogs_detail),
 ]
