@@ -6,7 +6,7 @@
         <ul>
             {% for catalog in catalog_list %}
                 <li>
-                    <a href="{{ catalog.get_absolute_url }}">{{ catalog.name }}</a>
+                    <a href="{% url 'catalog-detail' catalog.pk %}">{{ catalog.name }}</a>
                 </li>
             {% endfor %}
         </ul>

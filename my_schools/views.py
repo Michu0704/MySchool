@@ -23,3 +23,7 @@ def index(request):
 
 class CatalogList(generic.ListView):
     model = Catalog
+
+
+class CatalogDetailView(generic.DetailView):
+    model = Catalog
