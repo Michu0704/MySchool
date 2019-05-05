@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Schools</title>
-</head>
-<body>
-    <p>Siema tutaj My School</p>
-</body>
-</html>
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>My School Home</h1>
+    <p>Welcome to MySchool, a website developed by <em>same dobre mordy</em>!</p>
+    <h2>Dynamic content</h2>
+    <p>Present amount of catalogs and trainings:</p>
+    <ul>
+        <li><strong>Catalogs:</strong> {{ num_catalogs }}</li>
+        <li><strong>Trainings:</strong> {{ num_trainings }}</li>
+
+    </ul>
+{% endblock %}
