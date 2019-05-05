@@ -27,3 +27,7 @@ class CatalogList(generic.ListView):
 
 class CatalogDetailView(generic.DetailView):
     model = Catalog
+
+
+class TrainingList(generic.ListView):
+    model = Training

@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Training List</h1>
+    {% if training_list %}
+        <ul>
+            {% for training in training_list %}
+                <li>
+                    <a href="{{ training.get_absolute_url }}">{{ training.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>There are no trainings made.</p>
+    {% endif %}
+{% endblock %}
