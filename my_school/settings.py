@@ -26,7 +26,7 @@ SECRET_KEY = 'c_bqdraw)(q!r3$0tvpo2^3_y4fjkxqo8v#rv0sb9@ha9_*9)='
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'myschl.herokuapp.com',
+    'capgemini-myschool.herokuapp.com',
 ]
 
 
