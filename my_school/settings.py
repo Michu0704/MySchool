@@ -136,9 +136,6 @@ STATICFILES_DIRS = (
 )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-<<<<<<< HEAD
 
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 LOGIN_REDIRECT_URL = '/'
-=======
->>>>>>> 6725e0bbc99242c61bd428b17ad326af9ae73bcf
