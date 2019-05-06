@@ -10,4 +10,5 @@ urlpatterns = [
     path('catalog/<int:pk>', views.CatalogDetailView.as_view(), name='catalog-detail'),
     path('trainings/', views.TrainingList.as_view(), name='training'),
     path('training/<int:pk>', views.TrainingDetailView.as_view(), name='training-detail'),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
