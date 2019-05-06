@@ -26,7 +26,7 @@ SECRET_KEY = 'c_bqdraw)(q!r3$0tvpo2^3_y4fjkxqo8v#rv0sb9@ha9_*9)='
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'myschl.herokuapp.com',
+    'capgemini-myschool.herokuapp.com',
     '127.0.0.1',
 ]
 
@@ -136,6 +136,9 @@ STATICFILES_DIRS = (
 )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+<<<<<<< HEAD
 
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 LOGIN_REDIRECT_URL = '/'
+=======
+>>>>>>> 6725e0bbc99242c61bd428b17ad326af9ae73bcf
