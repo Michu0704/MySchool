@@ -1,16 +1,35 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+<div class="table table-responsive">
     <h1>Training List</h1>
     {% if training_list %}
-        <ul>
+         <table class="table" id="training-table">
+             <thead>
+                <tr>
+                    <th scope="col" id="fstcol">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Limit</th>
+                    <th scope="col">Auditorium</th>
+                        <th scope="col">Catalog</th>
+                </tr>
+              </thead>
             {% for training in training_list %}
-                <li>
-                    <a href="{% url 'training-detail' training.pk %}">{{ training.name }}</a>
-                </li>
+              <tbody>
+                <tr>
+                  <th scope="row">{{ training.pk }}</th>
+                  <td><a href="{% url 'training-detail' training.pk %}">{{ training.name }}</a></td>
+                  <td>{{ training.limit }}</td>
+                  <td>{{ training.auditorium }}</td>
+                  <td><a href="{% url 'catalog-detail' training.catalog.id %}">{{ training.catalog }}</a></td>
+              </tbody>
             {% endfor %}
-        </ul>
+        </table>
     {% else %}
         <p>There are no trainings made.</p>
     {% endif %}
+</div>
+
 {% endblock %}
+
+
