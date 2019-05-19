@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 from .models import Catalog, Training
@@ -21,17 +22,28 @@ def index(request):
     return render(request, 'index.html', context=context)
 
 
-class CatalogList(generic.ListView):
+def signup(request):
+    """view function for signup for training"""
+    training = Training.pk
+
+    context = {
+        'training': training
+    }
+
+    return render(request, 'signup.html', context=context)
+
+
+class CatalogList(LoginRequiredMixin, generic.ListView):
     model = Catalog
 
 
-class CatalogDetailView(generic.DetailView):
+class CatalogDetailView(LoginRequiredMixin, generic.DetailView):
     model = Catalog
 
 
-class TrainingList(generic.ListView):
+class TrainingList(LoginRequiredMixin, generic.ListView):
     model = Training
 
 
-class TrainingDetailView(generic.DetailView):
+class TrainingDetailView(LoginRequiredMixin, generic.DetailView):
     model = Training

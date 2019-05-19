@@ -7,5 +7,13 @@
     <p><strong>Limit:</strong> {{ training.limit }}</p>
     <p><strong>Auditorium:</strong> {{ training.auditorium }}</p>
     <p><strong>Date:</strong> {{ training.date }}</p>
+    {% if training.participants != 'auth.User.None' %}
+        <p><strong>Participants:</strong> {{ training.participants}}</p>
+    {% else %}
+        <p>There are no participants yet.</p>
+    {% endif %}
+
+    <input type="button" onclick="window.location.href='signup';" class="btn btn-default btn-lg" value="Sign up for training!">
+
 
 {% endblock %}
