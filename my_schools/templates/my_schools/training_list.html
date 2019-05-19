@@ -11,6 +11,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Limit</th>
                     <th scope="col">Auditorium</th>
+                    <th scope="col">Date</th>
                         <th scope="col">Catalog</th>
                 </tr>
               </thead>
@@ -21,6 +22,7 @@
                   <td><a href="{% url 'training-detail' training.pk %}">{{ training.name }}</a></td>
                   <td>{{ training.limit }}</td>
                   <td>{{ training.auditorium }}</td>
+                  <td>{{ training.date }}</td>
                   <td><a href="{% url 'catalog-detail' training.catalog.id %}">{{ training.catalog }}</a></td>
               </tbody>
             {% endfor %}

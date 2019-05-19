@@ -27,6 +27,34 @@ body {
   width: 15rem;
 }
 
+#user-log {
+margin-top: 8px;
+margin-right: 8px;
+}
+
+
+ .navbar {
+  min-height: 120px;
+  background-image: url('../img/love_career_blue_center.jpeg');
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+
 #page-content-wrapper {
   min-width: 100vw;
 
@@ -49,6 +77,12 @@ th {
 #fstcol {
 width: 20px;
 }
+
+#user-log {
+margin-top: 8px;
+margin-right: 8px;
+}
+
 
 
 @media (min-width: 768px) {

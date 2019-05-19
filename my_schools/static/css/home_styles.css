@@ -1,0 +1,24 @@
+.big-banner {
+ background-image: url('../img/background1.jpg');
+
+   /* Full height */
+  height: 100%;
+  margin-top: 50px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg{
+    background-image: url('../img/background_books');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

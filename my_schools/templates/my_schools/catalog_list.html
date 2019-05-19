@@ -1,16 +1,31 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+<div class="table table-responsive">
     <h1>Catalog List</h1>
     {% if catalog_list %}
-        <ul>
+         <table class="table" id="catalog-table">
+             <thead>
+                <tr>
+                    <th scope="col" id="fstcol">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Provider</th>
+                    <th scope="col">Level</th>
+                </tr>
+              </thead>
             {% for catalog in catalog_list %}
-                <li>
-                    <a href="{% url 'catalog-detail' catalog.pk %}">{{ catalog.name }}</a>
-                </li>
+              <tbody>
+                <tr>
+                  <th scope="row">{{ catalog.pk }}</th>
+                  <td><a href="{% url 'catalog-detail' catalog.pk %}">{{ catalog.name }}</a></td>
+                  <td>{{ catalog.provider }}</td>
+                  <td>{{ catalog.level }}</td>
+              </tbody>
             {% endfor %}
-        </ul>
+        </table>
     {% else %}
         <p>There are no catalogs made.</p>
     {% endif %}
+</div>
+
 {% endblock %}

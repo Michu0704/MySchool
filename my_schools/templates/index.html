@@ -1,13 +1,18 @@
 {% extends "base_generic.html" %}
 
-{% block content %}
-    <h1>My School Home</h1>
-    <p>Welcome to MySchool, a website developed by <em>same dobre mordy</em>!</p>
-    <h2>Dynamic content</h2>
-    <p>Present amount of catalogs and trainings:</p>
-    <ul>
-        <li><strong>Catalogs:</strong> {{ num_catalogs }}</li>
-        <li><strong>Trainings:</strong> {{ num_trainings }}</li>
 
-    </ul>
+{% block content %}
+
+            <!-- Mask & flexbox options-->
+<div class="container-fluid home-container">
+   <div class="jumbotron big-banner">
+            <h1 class="display-4">Welcome to MySchool!</h1>
+            <p class="lead">The best site to improve your programming and soft skills</p>
+            <hr class="my-4">
+            <p>Sign up for the course!</p>
+            <a class="btn btn-primary btn-lg" href="{%  url 'training' %}" role="button">Sign up</a>
+   </div>
+ </div>
+            <!-- Mask & flexbox options-->
+
 {% endblock %}
