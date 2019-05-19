@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e81b87b1-c704-4a07-9fa3-2b47cd361914" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_schools/static/css/home_styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_schools/static/css/simple-sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_schools/static/css/simple-sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_schools/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_schools/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_schools/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_schools/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_schools/templates/my_schools/catalog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_schools/templates/my_schools/catalog_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_schools/templates/my_schools/training_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_schools/templates/my_schools/training_list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +90,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="5">
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="403" />
     <option name="y" value="27" />
     <option name="width" value="960" />
     <option name="height" value="1053" />
@@ -118,32 +112,6 @@
               <item name="MySchool" type="b2602c69:ProjectViewProjectNode" />
               <item name="MySchool" type="462c0819:PsiDirectoryNode" />
               <item name="my_schools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MySchool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MySchool" type="462c0819:PsiDirectoryNode" />
-              <item name="my_schools" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MySchool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MySchool" type="462c0819:PsiDirectoryNode" />
-              <item name="my_schools" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MySchool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MySchool" type="462c0819:PsiDirectoryNode" />
-              <item name="my_schools" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MySchool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MySchool" type="462c0819:PsiDirectoryNode" />
-              <item name="my_schools" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -192,9 +160,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="960" height="1053" extended-state="5" />
+    <frame x="403" y="27" width="960" height="1053" extended-state="4" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0416222" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3244397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -205,8 +173,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996369" weight="0.3298731" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4996369" weight="0.3298731" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.31086957" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003631" side_tool="true" weight="0.3298731" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49839914" visible="true" weight="0.3097826" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50160086" side_tool="true" visible="true" weight="0.3097826" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4996369" weight="0.3298731" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
