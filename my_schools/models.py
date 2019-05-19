@@ -36,6 +36,7 @@ class Training(models.Model):
     name = models.CharField(max_length=200)
     auditorium = models.CharField(max_length=200)
     date = models.DateTimeField()
+    participants = models.ManyToManyField(User, null=True, blank=True)
 
     def __str__(self):
         """

@@ -11,4 +11,5 @@ urlpatterns = [
     path('trainings/', views.TrainingList.as_view(), name='training'),
     path('training/<int:pk>', views.TrainingDetailView.as_view(), name='training-detail'),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('training/signup', views.signup, name='signup-detail'),
 ]
