@@ -1,19 +1,19 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+
     <h1>{{ training.name }}</h1>
 
     <p><strong>From catalog:</strong> {{ training.catalog }}</p>
     <p><strong>Limit:</strong> {{ training.limit }}</p>
     <p><strong>Auditorium:</strong> {{ training.auditorium }}</p>
     <p><strong>Date:</strong> {{ training.date }}</p>
-    {% if training.participants != 'auth.User.None' %}
-        <p><strong>Participants:</strong> {{ training.participants}}</p>
+    {% if training.participants %}
+        <p><strong>Participants:</strong> {{ training.participants.all }}</p>
     {% else %}
         <p>There are no participants yet.</p>
     {% endif %}
 
     <input type="button" onclick="window.location.href='signup';" class="btn btn-default btn-lg" value="Sign up for training!">
-
 
 {% endblock %}
