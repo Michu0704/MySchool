@@ -25,7 +25,7 @@ def index(request):
 
 def signup(request):
     """view function for signup for training"""
-    training = Training.objects.get(pk=7)
+    training = Training.objects.get(pk = 6)
     training.participants.add(request.user)
     training.save()
 

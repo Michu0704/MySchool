@@ -21,7 +21,6 @@ class Catalog(models.Model):
         """
         return self.name
 
-
 class Training(models.Model):
     """
     Model of training
