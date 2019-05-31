@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>My trainings</h1>
+
+    {% if mytrainings_list %}
+        <ul>
+            <a href="{% url 'training-detail' training.pk %}">{{training.name}}</a>
+        </ul>
+
+    {% else %}
+        <p>There are no trainings participated.</p>
+    {% endif %}
+{% endblock %}
